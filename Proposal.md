@@ -10,7 +10,7 @@
 
 **github username** :   [ankitbhrdwj27](https://github.com/ankitbhrdwj27)
  
-**CV**              :   [Ankit](https://www.dropbox.com/s/sat3tktpoc8qkut/133050024%20-%203.pdf?dl=0)
+**CV**              :   [Click](https://www.dropbox.com/s/sat3tktpoc8qkut/133050024%20-%203.pdf?dl=0)
 
 
 ### Personal Background
