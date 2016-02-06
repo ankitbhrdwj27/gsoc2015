@@ -1,13 +1,38 @@
+Config Global/Local parameters
+------------------------------
 git config --global user.name "Ankit"
 git config --global user.email "ankitbhrdwj27@gmail.com"  //global configuration
+
+Add a new Directory and do some commit
+--------------------------------------
 git init //if you want to initiate a new directory
 git status //if you want to check the status of the directory
 git add filename or . // if you want to add some file/all files
 git commit -m "commit msg"
+
+Check the log
+-------------
 git log
+git log -- filename
+git log -M --follow -- filename // just to see the commits for that particular file after move 
 git log --oneline
 git log --stat
 git log --patch //all the changes are shown in this 
 
+Remove Files
+------------
+git rm filename
+rm filename and then follow git commands to commit the changes
+delete all unwanted file and git add -u . //update all the tracked files
+
+Move/Rename Files
+-----------------
+git mv 
+mv file1 file2 and then git status 
+git add -A .
 
 
+
+
+git pull/push
+git add remote origin
