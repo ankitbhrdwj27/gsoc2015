@@ -18,6 +18,7 @@ git log -M --follow -- filename // just to see the commits for that particular f
 git log --oneline
 git log --stat
 git log --patch //all the changes are shown in this 
+git reflog 	//all the chnages,commited/uncommited. Can play around last 30 days commit, don't know how ?
 
 Remove Files
 ------------
@@ -31,8 +32,48 @@ git mv
 mv file1 file2 and then git status 
 git add -A .
 
+Ignore unwanted file
+--------------------
+touch .gitignore
+add the filenames or wildcards or !filename(don't ignore) in the .gitignore file
+#comments in the ignore file
+git ls-files --others --ignored --exclude-standard // Will give you all the ignored files
+
+Merging
+-------
+git merge branchname		//Merge the changes in the master branch
+git merge --abort		//To abort the merging
+Take care of the conflicts while merging
+
+Branching
+---------
+git branch
+git branch -d branchname
+
+Checkout
+--------
+git checkout 			// changing branch or context
+git checkout -b branchname	//checkout everything and gave some branch name to the checkout
+git checkout -- filename	// discard the changes
+git checkout commit-id		// checkout the commit in the working tree
 
 
+Remote Branches
+---------------
+git remote add origin https://*.git  	//Add a remote branch
+git remote set-url origin newurl	//Set a new URL for the branch
+git remote rm origin			//remove the remote URL
+git remote -v				//To see the remote URL
 
-git pull/push
-git add remote origin
+	Fetch,Pull,Push
+	---------------
+	git fetch origin
+	git pull origin
+	git push origin
+
+Reset for reshaping history
+---------------------------
+git reset HEAD			//Mixed reset:from staging area to current chnages
+git reset --soft HEAD~5		//Soft reset :Uncommit last 5 chnages though the changes will be in the repo
+git reset --hard HEAD~5		//hard reset :Uncommit last 5 changes and the changes will go away
+checkout can also be used for similar purpose
